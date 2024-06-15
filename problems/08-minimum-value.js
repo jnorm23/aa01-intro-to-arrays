@@ -5,7 +5,13 @@ array is empty, the function should return null.
 */
 
 // Your code here 
+function minVal(arr){
+    if (arr.length === 0){
+        return null
+    }
+    return Math.min(...arr)
 
+}
 
 // console.log(minVal([4, 6, 3, 5, 2, 4])); // 2
 // console.log(minVal([-2, -3, -7, 3 ]));   // -7
