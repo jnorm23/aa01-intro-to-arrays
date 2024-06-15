@@ -6,7 +6,14 @@ Solve this using a loop.
 */
 
 // Your code here 
-
+function hasElement(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+            return true;
+        }
+    }
+    return false;
+}
 
 // console.log(hasElement(['a', 'b', 'c', 'e'], 'c')); // true
 // console.log(hasElement(['a', 'b', 'c', 'e'], 'a')); // true
